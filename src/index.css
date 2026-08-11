@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1e283b;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #1e283b;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  transition: transform 0.25s ease;
+  transform: translateZ(0);
+}
+
+.btn-pill:hover {
+  transform: scale(1.03);
+}
+
+.btn-pill--outline {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.btn-pill--dark-outline {
+  background-color: transparent;
+  border: 1px solid rgba(30, 40, 59, 0.35);
+  color: #1e283b;
+}
+
+.btn-pill__circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  min-width: 2.25rem;
+  border-radius: 9999px;
+  background-color: #ffd700;
+  color: #1e283b;
+}
+
+.checkmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  min-width: 1.1rem;
+  border-radius: 9999px;
+  background-color: #ffd700;
+  color: #1e283b;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation-play-state: paused !important;
+  }
+}
