@@ -29,7 +29,7 @@ export function Benefits() {
           {benefits.title} <span className="text-gold">{benefits.titleHighlight}</span>
         </h2>
 
-        <div className="mt-14" data-reveal>
+        <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2" data-reveal>
           <Marquee speed={45}>
             {benefits.items.map((item, index) => (
               <article

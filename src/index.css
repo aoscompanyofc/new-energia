@@ -10,6 +10,7 @@ body {
   background-color: #1e283b;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 h1,
