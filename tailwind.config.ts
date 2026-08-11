@@ -7,7 +7,7 @@ export default {
       colors: {
         navy: "#1e283b",
         gold: "#ffd700",
-        footer: "#000000",
+        footer: "#0e1626",
       },
       fontFamily: {
         heading: ["Outfit", "sans-serif"],
