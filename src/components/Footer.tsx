@@ -1,5 +1,5 @@
 import { footer, whatsapp } from "../data/content";
-import { InstagramIcon, MailIcon, PinIcon, WhatsappIcon } from "./Icons";
+import { ChevronIcon, InstagramIcon, MailIcon, PinIcon, WhatsappIcon } from "./Icons";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -42,7 +42,10 @@ export function Footer() {
             <ul className="mt-5 flex flex-col gap-3">
               {footer.quickLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-white/70 transition hover:text-gold">
+                  <a href={link.href} className="flex items-center gap-3 text-sm text-white/70 transition hover:text-gold">
+                    <span className="checkmark shrink-0">
+                      <ChevronIcon className="h-3 w-3" />
+                    </span>
                     {link.label}
                   </a>
                 </li>
