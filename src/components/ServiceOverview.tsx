@@ -13,7 +13,7 @@ export type ServiceBlock =
   | { type: "highlightBox"; heading?: string; items: string[] };
 
 type ServiceOverviewProps = {
-  activeKey: ServiceKey;
+  activeKey?: ServiceKey;
   image: string;
   imageAlt: string;
   heading: string;
@@ -117,33 +117,42 @@ export function ServiceOverview({
 }: ServiceOverviewProps) {
   const scope = useScrollReveal<HTMLElement>();
 
+  const content = (
+    <div data-reveal>
+      <img
+        src={image}
+        alt={imageAlt}
+        width={900}
+        height={520}
+        loading="lazy"
+        className="w-full rounded-2xl object-cover"
+      />
+      <h2 className="mt-8 font-heading text-2xl font-medium leading-tight text-navy sm:text-3xl">{heading}</h2>
+      {leadParagraph && <p className="mt-4 text-sm font-semibold leading-relaxed text-navy/85">{leadParagraph}</p>}
+      {paragraphs.map((paragraph) => (
+        <p key={paragraph} className="mt-4 text-sm leading-relaxed text-navy/70">
+          {paragraph}
+        </p>
+      ))}
+      {blocks.map((block, index) => (
+        <Block key={index} block={block} />
+      ))}
+      {closingNote && <p className="mt-6 text-sm italic leading-relaxed text-navy/50">{closingNote}</p>}
+    </div>
+  );
+
+  if (!activeKey) {
+    return (
+      <section ref={scope} className="bg-white px-5 py-20 lg:px-8">
+        <div className="mx-auto max-w-3xl">{content}</div>
+      </section>
+    );
+  }
+
   return (
     <section ref={scope} className="bg-white px-5 py-20 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[2fr_1fr] lg:gap-14">
-        <div data-reveal>
-          <img
-            src={image}
-            alt={imageAlt}
-            width={900}
-            height={520}
-            loading="lazy"
-            className="w-full rounded-2xl object-cover"
-          />
-          <h2 className="mt-8 font-heading text-2xl font-medium leading-tight text-navy sm:text-3xl">{heading}</h2>
-          {leadParagraph && (
-            <p className="mt-4 text-sm font-semibold leading-relaxed text-navy/85">{leadParagraph}</p>
-          )}
-          {paragraphs.map((paragraph) => (
-            <p key={paragraph} className="mt-4 text-sm leading-relaxed text-navy/70">
-              {paragraph}
-            </p>
-          ))}
-          {blocks.map((block, index) => (
-            <Block key={index} block={block} />
-          ))}
-          {closingNote && <p className="mt-6 text-sm italic leading-relaxed text-navy/50">{closingNote}</p>}
-        </div>
-
+        {content}
         <div data-reveal>
           <ServiceSidebar activeKey={activeKey} />
         </div>

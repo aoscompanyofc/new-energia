@@ -46,14 +46,24 @@ export const hero = {
     "Projetamos, instalamos e operamos soluções completas em geração solar, armazenamento e eficiência energética, com precisão técnica do início ao fim.",
   ctaPrimary: "Invista com a New",
   ctaSecondary: "Fale com um especialista",
+  investmentOpportunitiesLabel: "OPORTUNIDADES DE INVESTIMENTO",
   highlightCards: [
     {
-      eyebrow: "OPORTUNIDADES DE INVESTIMENTO",
+      eyebrow: "INVESTIMENTO EM USINA",
       title: "em energia solar",
       highlight: "garanta rentabilidade mensal",
       description: "Usinas de investimento, rentabilidade previsível de 24% ao ano",
       image: "heroCardInvest",
       href: "/servicos/usinas",
+      external: false,
+    },
+    {
+      eyebrow: "INVESTIMENTO EM ELETROPOSTO",
+      title: "em mobilidade elétrica",
+      highlight: "diversifique seu portfólio",
+      description: "Participe da infraestrutura de recarga elétrica em expansão",
+      image: "heroCardInvest",
+      href: "/investidores/eletroposto",
       external: false,
     },
     {

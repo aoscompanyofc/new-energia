@@ -55,7 +55,10 @@ export function Hero() {
           </PillButton>
         </div>
 
-        <div className="mt-20 grid gap-5 sm:grid-cols-2">
+        <p data-hero-card className="mt-20 font-heading text-xs font-semibold uppercase tracking-wide text-gold">
+          {hero.investmentOpportunitiesLabel}
+        </p>
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {hero.highlightCards.map((card) => (
             <a
               key={card.eyebrow}
