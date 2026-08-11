@@ -1,9 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Service from "./pages/Service";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/servicos/:slug" element={<Service />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </>
   );
 }

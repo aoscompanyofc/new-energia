@@ -1,4 +1,4 @@
-import { footer } from "../data/content";
+import { footer, whatsapp } from "../data/content";
 import { InstagramIcon, MailIcon, PinIcon, WhatsappIcon } from "./Icons";
 
 export function Footer() {
@@ -26,7 +26,7 @@ export function Footer() {
                 <InstagramIcon className="h-4 w-4" />
               </a>
               <a
-                href="https://wa.me/5531997328451"
+                href={whatsapp.link}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"
@@ -61,7 +61,9 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-sm text-white/70">
                 <WhatsappIcon className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>{footer.phone}</span>
+                <a href={whatsapp.link} target="_blank" rel="noreferrer" className="hover:text-gold">
+                  {footer.phone}
+                </a>
               </li>
               <li className="flex items-start gap-3 text-sm text-white/70">
                 <PinIcon className="mt-0.5 h-4 w-4 shrink-0 text-gold" />

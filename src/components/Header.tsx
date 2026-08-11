@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { nav } from "../data/content";
 import { ChevronIcon, CloseIcon, MenuIcon } from "./Icons";
-import { PillButton } from "./PillButton";
+import { WhatsAppButton } from "./WhatsAppButton";
 
 export function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -86,12 +86,13 @@ export function Header() {
           <Link to="/#contato" className={navLinkClass(false)}>
             Contato
           </Link>
+          <Link to="/blog" className={navLinkClass(pathname === "/blog")}>
+            Blog
+          </Link>
         </nav>
 
         <div className="hidden lg:block">
-          <PillButton as="a" href="/#contato">
-            {nav.cta}
-          </PillButton>
+          <WhatsAppButton />
         </div>
 
         <button
@@ -172,10 +173,15 @@ export function Header() {
             >
               Contato
             </Link>
+            <Link
+              to="/blog"
+              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/blog" ? "text-gold" : "text-white"}`}
+              onClick={() => setIsMobileOpen(false)}
+            >
+              Blog
+            </Link>
             <div className="pt-6">
-              <PillButton as="a" href="/#contato" onClick={() => setIsMobileOpen(false)}>
-                {nav.cta}
-              </PillButton>
+              <WhatsAppButton onClick={() => setIsMobileOpen(false)} />
             </div>
           </nav>
         </div>

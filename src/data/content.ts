@@ -7,6 +7,16 @@ export type ServiceKey =
   | "eficiencia"
   | "gere";
 
+export const whatsapp = {
+  number: "5531997328451",
+  displayNumber: "(31) 99732-8451",
+  message: "Olá! Quero falar com um especialista da New Energia.",
+  get link() {
+    return `https://wa.me/${this.number}?text=${encodeURIComponent(this.message)}`;
+  },
+  label: "Fale no WhatsApp",
+};
+
 export const nav = {
   logoTitle: "New",
   logoSubtitle: "Engenharia e Energia",
@@ -18,11 +28,11 @@ export const nav = {
   ],
   servicesLabel: "Serviços",
   services: [
-    { label: "Operação e Manutenção", href: "/servicos/om", key: "om" as ServiceKey },
     { label: "Usinas de Investimento", href: "/servicos/usinas", key: "usinas" as ServiceKey },
-    { label: "Mobilidade Elétrica", href: "/servicos/mobilidade", key: "mobilidade" as ServiceKey },
     { label: "BESS", href: "/servicos/bess", key: "bess" as ServiceKey },
+    { label: "Mobilidade Elétrica (Eletroposto)", href: "/servicos/mobilidade", key: "mobilidade" as ServiceKey },
     { label: "Energia com Desconto", href: "/servicos/desconto", key: "desconto" as ServiceKey },
+    { label: "Operação e Manutenção", href: "/servicos/om", key: "om" as ServiceKey },
     { label: "Eficiência Energética", href: "/servicos/eficiencia", key: "eficiencia" as ServiceKey },
     { label: "Gere sua Própria Energia", href: "/servicos/gere", key: "gere" as ServiceKey },
   ],
@@ -43,6 +53,8 @@ export const hero = {
       highlight: "garanta rentabilidade mensal",
       description: "Usinas de investimento, rentabilidade previsível de 24% ao ano",
       image: "heroCardInvest",
+      href: "/servicos/usinas",
+      external: false,
     },
     {
       eyebrow: "DESCONTO EM CONTA",
@@ -50,6 +62,8 @@ export const hero = {
       highlight: "mais barata sem investimento",
       description: "Economia de até 20% sem burocracia",
       image: "heroCardDiscount",
+      href: "https://ekonenergia.com.br",
+      external: true,
     },
   ],
 };
@@ -171,9 +185,8 @@ export const sobrePage = {
 };
 
 export const impactAccordion = {
-  eyebrow: "Impacto e Sustentabilidade",
   title: "Por que empresas e investidores escolhem a",
-  titleHighlight: "NEW ENERGIA",
+  titleHighlight: "New?",
   items: [
     {
       title: "Precisão técnica",
@@ -212,47 +225,11 @@ export const clientsCarousel = {
   ],
 };
 
-export const servicesCards = {
-  eyebrow: "Nossos Serviços",
-  title: "Soluções estratégicas que geram",
-  titleHighlight: "resultados",
-  titleEnd: "imediatos",
-  cards: [
-    {
-      key: "usinas" as ServiceKey,
-      icon: "leaf",
-      title: "Usinas de Investimentos (Cotas)",
-      description:
-        "Renda mensal previsível e isenção de Imposto de Renda em um ativo físico regulado pela ANEEL.",
-      cta: "Saiba mais sobre Cotas",
-      image: "service1",
-    },
-    {
-      key: "bess" as ServiceKey,
-      icon: "battery",
-      title: "BESS – Armazenamento de Energia",
-      description:
-        "Economia real para indústrias e operações de alto consumo, com proteção contra quedas de energia.",
-      cta: "Entenda o BESS",
-      image: "service2",
-    },
-    {
-      key: "gere" as ServiceKey,
-      icon: "bolt",
-      title: "Gere sua própria energia (Usinas Fotovoltaicas)",
-      description:
-        "Autonomia e economia consistente para indústrias, galpões, supermercados e propriedades rurais.",
-      cta: "Ver projetos solares",
-      image: "service3",
-    },
-  ],
-};
-
 export const portfolio = {
   eyebrow: "Conheça algumas usinas operadas e entregues pela NEW.",
   title: "Projetos que entregam",
   titleHighlight: "desempenho real",
-  cta: "Mais projetos",
+  cta: "+ Projetos",
   projects: [
     {
       power: "1.600 kWp",
@@ -472,11 +449,12 @@ export const contactForm = {
 export const footer = {
   quickLinksTitle: "Links Rápidos",
   quickLinks: [
-    { label: "Home", href: "#home" },
-    { label: "Sobre", href: "#sobre" },
-    { label: "Serviços", href: "#servicos" },
-    { label: "Portfólio", href: "#portfolio" },
-    { label: "Contato", href: "#contato" },
+    { label: "Home", href: "/" },
+    { label: "Sobre", href: "/sobre" },
+    { label: "Serviços", href: "/#servicos" },
+    { label: "Portfólio", href: "/#portfolio" },
+    { label: "Contato", href: "/#contato" },
+    { label: "Blog", href: "/blog" },
   ],
   contactTitle: "Informações de contato",
   email: "contato@energianew.com.br",

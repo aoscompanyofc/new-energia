@@ -6,7 +6,6 @@ import { Benefits } from "../components/Benefits";
 import { About } from "../components/About";
 import { ImpactAccordion } from "../components/ImpactAccordion";
 import { ClientsCarousel } from "../components/ClientsCarousel";
-import { ServicesCards } from "../components/ServicesCards";
 import { PortfolioShowcase } from "../components/PortfolioShowcase";
 import { FinalCTA } from "../components/FinalCTA";
 import { StatsCounter } from "../components/StatsCounter";
@@ -37,7 +36,6 @@ export default function Home() {
       <About />
       <ImpactAccordion />
       <ClientsCarousel />
-      <ServicesCards />
       <PortfolioShowcase />
       <FinalCTA />
       <StatsCounter />

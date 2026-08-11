@@ -34,8 +34,7 @@ export function ImpactAccordion() {
     <section ref={scope} className="bg-navy px-5 py-24 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:gap-20">
         <div data-reveal>
-          <p className="font-heading text-sm font-medium text-gold">{impactAccordion.eyebrow}</p>
-          <h2 className="mt-4 font-heading text-3xl font-medium leading-tight text-white sm:text-4xl md:text-[3rem]">
+          <h2 className="font-heading text-3xl font-medium leading-tight text-white sm:text-4xl md:text-[3rem]">
             {impactAccordion.title} <span className="text-gold">{impactAccordion.titleHighlight}</span>
           </h2>
         </div>

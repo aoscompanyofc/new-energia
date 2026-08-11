@@ -57,10 +57,13 @@ export function Hero() {
 
         <div className="mt-20 grid gap-5 sm:grid-cols-2">
           {hero.highlightCards.map((card) => (
-            <div
+            <a
               key={card.eyebrow}
+              href={card.href}
+              target={card.external ? "_blank" : undefined}
+              rel={card.external ? "noreferrer" : undefined}
               data-hero-card
-              className="flex gap-5 rounded-2xl bg-navy/90 p-5 ring-1 ring-white/10 backdrop-blur-sm sm:p-6"
+              className="flex gap-5 rounded-2xl bg-navy/90 p-5 ring-1 ring-white/10 backdrop-blur-sm transition hover:ring-gold/50 sm:p-6"
             >
               <img
                 src={images[card.image as keyof typeof images]}
@@ -79,7 +82,7 @@ export function Hero() {
                 </p>
                 <p className="mt-2 text-xs text-white/60">{card.description}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

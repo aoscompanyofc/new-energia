@@ -14,7 +14,7 @@ export function Benefits() {
   const scope = useScrollReveal<HTMLElement>();
 
   return (
-    <section ref={scope} className="bg-navy px-5 py-24 lg:px-8">
+    <section id="servicos" ref={scope} className="bg-navy px-5 py-24 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="flex justify-center" data-reveal>
           <PillButton href="/#contato" variant="outline" className="w-full max-w-md justify-between sm:w-auto">
@@ -50,7 +50,7 @@ export function Benefits() {
                   </p>
                 </div>
                 <a
-                  href="/#contato"
+                  href={`/servicos/${item.key}`}
                   className={`mt-6 inline-flex items-center gap-2 text-sm font-semibold ${
                     index % 3 === 1 ? "text-navy" : "text-gold"
                   }`}
