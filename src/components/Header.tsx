@@ -71,7 +71,7 @@ export function Header() {
                 {nav.services.map((service) => (
                   <Link
                     key={service.label}
-                    to={`/${service.href}`}
+                    to={service.href}
                     className="block border-b border-gold/20 px-5 py-3 text-sm text-white/90 transition last:border-b-0 hover:bg-gold hover:text-navy"
                   >
                     {service.label}
@@ -149,7 +149,7 @@ export function Header() {
                 {nav.services.map((service) => (
                   <Link
                     key={service.label}
-                    to={`/${service.href}`}
+                    to={service.href}
                     className="border-b border-white/10 py-3 text-sm text-white/80 last:border-b-0"
                     onClick={() => setIsMobileOpen(false)}
                   >

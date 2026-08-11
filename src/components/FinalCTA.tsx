@@ -3,7 +3,14 @@ import { images } from "../data/images";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { PillButton } from "./PillButton";
 
-export function FinalCTA() {
+type FinalCTAProps = {
+  title?: string;
+  text?: string;
+  cta?: string;
+  href?: string;
+};
+
+export function FinalCTA({ title, text, cta, href = "/#contato" }: FinalCTAProps = {}) {
   const scope = useScrollReveal<HTMLElement>();
 
   return (
@@ -19,13 +26,13 @@ export function FinalCTA() {
       <div className="absolute inset-0 bg-navy/70" />
       <div className="relative mx-auto max-w-3xl">
         <h2 data-reveal className="font-heading text-3xl font-medium leading-tight text-white sm:text-4xl md:text-5xl">
-          {finalCta.title}
+          {title ?? finalCta.title}
         </h2>
         <p data-reveal className="mt-5 max-w-xl text-base leading-relaxed text-white/80">
-          {finalCta.text}
+          {text ?? finalCta.text}
         </p>
         <div data-reveal className="mt-9">
-          <PillButton href="/#contato">{finalCta.cta}</PillButton>
+          <PillButton href={href}>{cta ?? finalCta.cta}</PillButton>
         </div>
       </div>
     </section>
