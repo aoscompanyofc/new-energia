@@ -118,6 +118,58 @@ export const about = {
   cta: "Conheça nossa história",
 };
 
+export const sobrePage = {
+  hero: {
+    title: "NEW Engenharia e Energia",
+    breadcrumb: "Home / Sobre",
+  },
+  intro: {
+    eyebrow: "SOBRE A NEW ENERGIA",
+    title: "Energia com Engenharia, Precisão e Segurança",
+    paragraphs: [
+      "A NEW Engenharia e Energia nasceu da união de profissionais experientes em engenharia, projetos e operação de usinas. Somos uma empresa mineira especializada em geração distribuída, armazenamento, mobilidade elétrica e gestão completa de ativos solares.",
+      "Atuamos com responsabilidade técnica, transparência e compromisso real com o desempenho. Nosso foco é entregar soluções consistentes, reguladas e seguras da concepção à operação contínua.",
+    ],
+  },
+  quemSomos: {
+    eyebrow: "Quem Somos",
+    title: "Especialistas em soluções energéticas completas",
+    paragraphs: [
+      "A NEW ENERGIA atua na geração distribuída, operação de usinas, BESS, mobilidade elétrica e eficiência energética sempre com um padrão elevado de engenharia.",
+      "Nosso compromisso é unir precisão técnica com responsabilidade operacional, garantindo resultados previsíveis e estabilidade energética para empresas, indústrias, produtores rurais e investidores.",
+    ],
+    impactLabel: "Dados de impacto",
+    impactItems: [
+      "Usinas de grande porte operadas em MG",
+      "Engenharia aplicada em todos os processos",
+      "Portfólio sólido com resultados reais",
+    ],
+    mission: {
+      number: "01",
+      title: "Nossa Missão",
+      text: "Desenvolver e operar soluções energéticas confiáveis, eficientes e seguras, gerando economia real e rentabilidade para empresas e investidores.",
+    },
+    vision: {
+      number: "02",
+      title: "Nossa Visão",
+      text: "Ser referência nacional em geração distribuída, operação de usinas e soluções de armazenamento, com um portfólio sólido e resultados consistentes.",
+    },
+  },
+  impact: {
+    eyebrow: "Impacto e Sustentabilidade",
+    title: "Impacto real, resultados mensuráveis",
+    paragraph:
+      "A NEW ENERGIA contribui para a expansão da energia limpa no Brasil, reduzindo custos energéticos, ampliando a autonomia de empresas e fortalecendo a matriz renovável nacional.",
+    listLabel: "Nosso trabalho envolve:",
+    items: [
+      "Redução de custos energéticos",
+      "Operação eficiente de usinas",
+      "Armazenamento seguro com BESS",
+      "Implementação de infraestrutura de mobilidade elétrica",
+    ],
+  },
+};
+
 export const impactAccordion = {
   eyebrow: "Impacto e Sustentabilidade",
   title: "Por que empresas e investidores escolhem a",

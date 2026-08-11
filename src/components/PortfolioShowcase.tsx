@@ -17,7 +17,7 @@ export function PortfolioShowcase() {
             </h2>
           </div>
           <div data-reveal>
-            <PillButton href="#contato">{portfolio.cta}</PillButton>
+            <PillButton href="/#contato">{portfolio.cta}</PillButton>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export function PortfolioShowcase() {
                 <h3 className="font-heading text-lg font-semibold text-white">{project.name}</h3>
                 <p className="mt-2 text-xs text-white/60">Quantidade de módulos: {project.modules}</p>
                 <p className="text-xs text-white/60">Geração média: {project.generation}</p>
-                <a href="#contato" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold">
+                <a href="/#contato" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold">
                   Saiba mais
                   <span aria-hidden="true">&rarr;</span>
                 </a>

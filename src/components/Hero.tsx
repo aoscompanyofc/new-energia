@@ -49,8 +49,8 @@ export function Hero() {
           {hero.subtitle}
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-4">
-          <PillButton href="#contato">{hero.ctaPrimary}</PillButton>
-          <PillButton href="#contato" variant="outline">
+          <PillButton href="/#contato">{hero.ctaPrimary}</PillButton>
+          <PillButton href="/#contato" variant="outline">
             {hero.ctaSecondary}
           </PillButton>
         </div>

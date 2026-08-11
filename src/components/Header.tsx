@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { nav } from "../data/content";
 import { ChevronIcon, CloseIcon, MenuIcon } from "./Icons";
 import { PillButton } from "./PillButton";
@@ -8,6 +9,7 @@ export function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 24);
@@ -23,6 +25,9 @@ export function Header() {
     };
   }, [isMobileOpen]);
 
+  const navLinkClass = (active: boolean) =>
+    `font-heading text-sm transition hover:text-gold ${active ? "text-gold" : "text-white"}`;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
@@ -30,7 +35,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#home" className="flex items-center gap-2" aria-label="New — Engenharia e Energia">
+        <Link to="/" className="flex items-center gap-2" aria-label="New — Engenharia e Energia">
           <span className="font-heading text-2xl font-semibold leading-none text-white">
             {nav.logoTitle}
             <span className="text-gold">.</span>
@@ -38,15 +43,15 @@ export function Header() {
           <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-white/70 sm:block">
             {nav.logoSubtitle}
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
-          <a href="#home" className="font-heading text-sm text-gold">
+          <Link to="/" className={navLinkClass(pathname === "/")}>
             Home
-          </a>
-          <a href="#sobre" className="font-heading text-sm text-white transition hover:text-gold">
+          </Link>
+          <Link to="/sobre" className={navLinkClass(pathname === "/sobre")}>
             Sobre
-          </a>
+          </Link>
           <div
             className="relative"
             onMouseEnter={() => setIsServicesOpen(true)}
@@ -64,27 +69,29 @@ export function Header() {
             {isServicesOpen && (
               <div className="absolute left-0 top-full w-64 overflow-hidden rounded-xl bg-navy shadow-xl ring-1 ring-white/10">
                 {nav.services.map((service) => (
-                  <a
+                  <Link
                     key={service.label}
-                    href={service.href}
+                    to={`/${service.href}`}
                     className="block border-b border-gold/20 px-5 py-3 text-sm text-white/90 transition last:border-b-0 hover:bg-gold hover:text-navy"
                   >
                     {service.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}
           </div>
-          <a href="#portfolio" className="font-heading text-sm text-white transition hover:text-gold">
+          <Link to="/#portfolio" className={navLinkClass(false)}>
             Portfólio
-          </a>
-          <a href="#contato" className="font-heading text-sm text-white transition hover:text-gold">
+          </Link>
+          <Link to="/#contato" className={navLinkClass(false)}>
             Contato
-          </a>
+          </Link>
         </nav>
 
         <div className="hidden lg:block">
-          <PillButton href="#contato">{nav.cta}</PillButton>
+          <PillButton as="a" href="/#contato">
+            {nav.cta}
+          </PillButton>
         </div>
 
         <button
@@ -115,12 +122,20 @@ export function Header() {
             </button>
           </div>
           <nav className="flex flex-col gap-1 px-5 py-4">
-            <a href="#home" className="border-b border-white/10 py-4 font-heading text-lg text-gold" onClick={() => setIsMobileOpen(false)}>
+            <Link
+              to="/"
+              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/" ? "text-gold" : "text-white"}`}
+              onClick={() => setIsMobileOpen(false)}
+            >
               Home
-            </a>
-            <a href="#sobre" className="border-b border-white/10 py-4 font-heading text-lg text-white" onClick={() => setIsMobileOpen(false)}>
+            </Link>
+            <Link
+              to="/sobre"
+              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/sobre" ? "text-gold" : "text-white"}`}
+              onClick={() => setIsMobileOpen(false)}
+            >
               Sobre
-            </a>
+            </Link>
             <button
               type="button"
               className="flex items-center justify-between border-b border-white/10 py-4 font-heading text-lg text-white"
@@ -132,25 +147,33 @@ export function Header() {
             {isMobileServicesOpen && (
               <div className="flex flex-col gap-1 bg-white/5 px-4">
                 {nav.services.map((service) => (
-                  <a
+                  <Link
                     key={service.label}
-                    href={service.href}
+                    to={`/${service.href}`}
                     className="border-b border-white/10 py-3 text-sm text-white/80 last:border-b-0"
                     onClick={() => setIsMobileOpen(false)}
                   >
                     {service.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}
-            <a href="#portfolio" className="border-b border-white/10 py-4 font-heading text-lg text-white" onClick={() => setIsMobileOpen(false)}>
+            <Link
+              to="/#portfolio"
+              className="border-b border-white/10 py-4 font-heading text-lg text-white"
+              onClick={() => setIsMobileOpen(false)}
+            >
               Portfólio
-            </a>
-            <a href="#contato" className="border-b border-white/10 py-4 font-heading text-lg text-white" onClick={() => setIsMobileOpen(false)}>
+            </Link>
+            <Link
+              to="/#contato"
+              className="border-b border-white/10 py-4 font-heading text-lg text-white"
+              onClick={() => setIsMobileOpen(false)}
+            >
               Contato
-            </a>
+            </Link>
             <div className="pt-6">
-              <PillButton href="#contato" onClick={() => setIsMobileOpen(false)}>
+              <PillButton as="a" href="/#contato" onClick={() => setIsMobileOpen(false)}>
                 {nav.cta}
               </PillButton>
             </div>

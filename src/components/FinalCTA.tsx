@@ -25,7 +25,7 @@ export function FinalCTA() {
           {finalCta.text}
         </p>
         <div data-reveal className="mt-9">
-          <PillButton href="#contato">{finalCta.cta}</PillButton>
+          <PillButton href="/#contato">{finalCta.cta}</PillButton>
         </div>
       </div>
     </section>

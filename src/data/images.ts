@@ -1,31 +1,33 @@
-/**
- * Centralized remote image references (Unsplash), served via query params
- * requesting explicit width + auto format (webp when supported). Swap these
- * for the client's real photography in src/assets when available.
- */
-function unsplash(id: string, width: number, height: number): string {
-  return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&h=${height}&q=80`;
-}
+import heroSunset from "../assets/photos/hero-sunset-1920.webp";
+import plantaPerdigao1200 from "../assets/photos/planta-perdigao-1200.webp";
+import plantaPerdigao480 from "../assets/photos/planta-perdigao-480.webp";
+import plantaUrbana900 from "../assets/photos/planta-urbana-900.webp";
+import plantaUrbana480 from "../assets/photos/planta-urbana-480.webp";
+import plantaPiumhi900 from "../assets/photos/planta-piumhi-900.webp";
+import paineisCloseup900 from "../assets/photos/paineis-closeup-900.webp";
+import equipeNew900 from "../assets/photos/equipe-new-900.webp";
+import equipeNew1920 from "../assets/photos/equipe-new-1920.webp";
+import instalacaoEquipe900 from "../assets/photos/instalacao-equipe-900.webp";
 
 export const images = {
-  heroBg: unsplash("photo-1509391366360-2e959784a276", 1920, 1080),
-  heroCardInvest: unsplash("photo-1508514177221-188b1cf16e9d", 480, 480),
-  heroCardDiscount: unsplash("photo-1466611653911-95081537e5b7", 480, 480),
+  heroBg: heroSunset,
+  heroCardInvest: plantaPerdigao480,
+  heroCardDiscount: plantaUrbana480,
 
-  aboutTeaser: unsplash("photo-1497440001374-f26997328c1b", 900, 700),
-  aboutHero: unsplash("photo-1497440001374-f26997328c1b", 1200, 800),
-  aboutTeam: unsplash("photo-1591825381744-1b58b7bb6a3a", 700, 600),
+  aboutTeaser: plantaPerdigao1200,
+  aboutHero: heroSunset,
+  aboutTeam: equipeNew900,
 
-  finalCta: unsplash("photo-1620714223084-8fcacc6dfd8d", 1920, 900),
+  finalCta: equipeNew1920,
 
-  service1: unsplash("photo-1508514177221-188b1cf16e9d", 700, 500),
-  service2: unsplash("photo-1466611653911-95081537e5b7", 700, 500),
-  service3: unsplash("photo-1497440001374-f26997328c1b", 700, 500),
+  service1: plantaPerdigao1200,
+  service2: plantaPiumhi900,
+  service3: heroSunset,
 
-  portfolio1: unsplash("photo-1509391366360-2e959784a276", 700, 500),
-  portfolio2: unsplash("photo-1508514177221-188b1cf16e9d", 700, 500),
-  portfolio3: unsplash("photo-1466611653911-95081537e5b7", 700, 500),
-  portfolio4: unsplash("photo-1497440001374-f26997328c1b", 700, 500),
-  portfolio5: unsplash("photo-1591825381744-1b58b7bb6a3a", 700, 500),
-  portfolio6: unsplash("photo-1509391366360-2e959784a276", 700, 500),
+  portfolio1: plantaPerdigao1200,
+  portfolio2: plantaUrbana900,
+  portfolio3: paineisCloseup900,
+  portfolio4: plantaPiumhi900,
+  portfolio5: instalacaoEquipe900,
+  portfolio6: plantaUrbana900,
 } as const;

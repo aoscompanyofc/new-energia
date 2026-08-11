@@ -1,43 +1,18 @@
-import { Helmet } from "react-helmet-async";
+import { Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Benefits } from "./components/Benefits";
-import { About } from "./components/About";
-import { ImpactAccordion } from "./components/ImpactAccordion";
-import { ClientsCarousel } from "./components/ClientsCarousel";
-import { ServicesCards } from "./components/ServicesCards";
-import { PortfolioShowcase } from "./components/PortfolioShowcase";
-import { FinalCTA } from "./components/FinalCTA";
-import { StatsCounter } from "./components/StatsCounter";
-import { SuppliersCarousel } from "./components/SuppliersCarousel";
-import { FAQ } from "./components/FAQ";
-import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
+import Home from "./pages/Home";
+import Sobre from "./pages/Sobre";
 
 function App() {
   return (
     <>
-      <Helmet>
-        <title>New Energia | Engenharia em Energia Solar, BESS e Eficiência Energética</title>
-        <meta
-          name="description"
-          content="Soluções completas em geração distribuída, usinas de investimento, O&M, BESS, mobilidade elétrica e eficiência energética. Engenharia com precisão técnica do início ao fim."
-        />
-      </Helmet>
       <Header />
       <main>
-        <Hero />
-        <Benefits />
-        <About />
-        <ImpactAccordion />
-        <ClientsCarousel />
-        <ServicesCards />
-        <PortfolioShowcase />
-        <FinalCTA />
-        <StatsCounter />
-        <SuppliersCarousel />
-        <FAQ />
-        <ContactForm />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+        </Routes>
       </main>
       <Footer />
     </>

@@ -43,7 +43,7 @@ export function ServicesCards() {
               <div className="p-6">
                 <h3 className="font-heading text-lg font-semibold text-white">{card.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/65">{card.description}</p>
-                <a href="#contato" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold">
+                <a href="/#contato" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold">
                   {card.cta}
                   <span aria-hidden="true">&rarr;</span>
                 </a>

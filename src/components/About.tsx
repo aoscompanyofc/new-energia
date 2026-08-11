@@ -42,7 +42,7 @@ export function About() {
           </ul>
 
           <div className="mt-9">
-            <PillButton href="#sobre">{about.cta}</PillButton>
+            <PillButton href="/sobre">{about.cta}</PillButton>
           </div>
         </div>
       </div>
