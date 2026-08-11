@@ -55,7 +55,7 @@ export function HowItWorks({ title, intro, steps, extraCard, extraCardPosition =
                 <h3 className="font-heading text-base font-semibold text-white">{step.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/65">{step.description}</p>
               </div>
-              <span className="absolute bottom-5 right-5 flex h-9 w-9 items-center justify-center rounded-full bg-gold font-heading text-sm font-semibold text-navy">
+              <span className="absolute bottom-5 right-5 flex h-9 w-9 items-center justify-center rounded-full bg-accent font-heading text-sm font-semibold text-navy">
                 {step.number}
               </span>
             </div>

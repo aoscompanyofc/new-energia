@@ -43,7 +43,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <h1 className="max-w-4xl font-heading text-4xl font-medium leading-[1.1] text-white sm:text-5xl md:text-6xl">
           {hero.titleLine1}{" "}
-          <span className="font-semibold uppercase text-gold">{hero.titleHighlight}</span>
+          <span className="font-semibold uppercase text-accent">{hero.titleHighlight}</span>
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
           {hero.subtitle}
@@ -55,7 +55,7 @@ export function Hero() {
           </PillButton>
         </div>
 
-        <p data-hero-card className="mt-20 font-heading text-xs font-semibold uppercase tracking-wide text-gold">
+        <p data-hero-card className="mt-20 font-heading text-xs font-semibold uppercase tracking-wide text-accent">
           {hero.investmentOpportunitiesLabel}
         </p>
         <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -66,7 +66,7 @@ export function Hero() {
               target={card.external ? "_blank" : undefined}
               rel={card.external ? "noreferrer" : undefined}
               data-hero-card
-              className="flex gap-5 rounded-2xl bg-navy/90 p-5 ring-1 ring-white/10 backdrop-blur-sm transition hover:ring-gold/50 sm:p-6"
+              className="flex gap-5 rounded-2xl bg-navy/90 p-5 ring-1 ring-white/10 backdrop-blur-sm transition hover:ring-accent/50 sm:p-6"
             >
               <img
                 src={images[card.image as keyof typeof images]}
@@ -81,7 +81,7 @@ export function Hero() {
                   {card.eyebrow}
                 </p>
                 <p className="mt-2 text-sm text-white">
-                  {card.title} <span className="text-gold">{card.highlight}</span>
+                  {card.title} <span className="text-accent">{card.highlight}</span>
                 </p>
                 <p className="mt-2 text-xs text-white/60">{card.description}</p>
               </div>

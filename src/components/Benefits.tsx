@@ -6,8 +6,8 @@ import { PillButton } from "./PillButton";
 
 const cardStyles = [
   "bg-white/5 text-white ring-1 ring-white/10",
-  "bg-gold text-navy",
-  "bg-transparent text-white ring-1 ring-gold/60",
+  "bg-accent text-navy",
+  "bg-transparent text-white ring-1 ring-accent/60",
 ];
 
 export function Benefits() {
@@ -26,7 +26,7 @@ export function Benefits() {
           data-reveal
           className="mx-auto mt-10 max-w-3xl text-center font-heading text-3xl font-medium leading-tight text-white sm:text-4xl md:text-[3.2rem]"
         >
-          {benefits.title} <span className="text-gold">{benefits.titleHighlight}</span>
+          {benefits.title} <span className="text-accent">{benefits.titleHighlight}</span>
         </h2>
 
         <div className="relative left-1/2 mt-14 w-screen -translate-x-1/2" data-reveal>
@@ -42,7 +42,7 @@ export function Benefits() {
                 <div>
                   <DynamicIcon
                     name={item.icon as IconName}
-                    className={`h-9 w-9 ${index % 3 === 1 ? "text-navy" : "text-gold"}`}
+                    className={`h-9 w-9 ${index % 3 === 1 ? "text-navy" : "text-accent"}`}
                   />
                   <h3 className="mt-8 font-heading text-xl font-semibold">{item.title}</h3>
                   <p className={`mt-3 text-sm leading-relaxed ${index % 3 === 1 ? "text-navy/80" : "opacity-70"}`}>
@@ -52,7 +52,7 @@ export function Benefits() {
                 <a
                   href={`/servicos/${item.key}`}
                   className={`mt-6 inline-flex items-center gap-2 text-sm font-semibold ${
-                    index % 3 === 1 ? "text-navy" : "text-gold"
+                    index % 3 === 1 ? "text-navy" : "text-accent"
                   }`}
                 >
                   Saiba Mais

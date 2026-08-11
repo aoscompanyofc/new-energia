@@ -18,8 +18,8 @@ export function ServiceSidebar({ activeKey }: ServiceSidebarProps) {
             <li key={service.key}>
               <Link
                 to={service.href}
-                className={`flex items-center gap-3 text-sm transition hover:text-gold ${
-                  service.key === activeKey ? "text-gold" : "text-white/80"
+                className={`flex items-center gap-3 text-sm transition hover:text-accent ${
+                  service.key === activeKey ? "text-accent" : "text-white/80"
                 }`}
               >
                 <span className="checkmark">
@@ -32,7 +32,7 @@ export function ServiceSidebar({ activeKey }: ServiceSidebarProps) {
         </ul>
       </div>
 
-      <div className="relative overflow-hidden rounded-2xl bg-gold p-6">
+      <div className="relative overflow-hidden rounded-2xl bg-accent p-6">
         <img
           src={images.aboutTeam}
           alt=""

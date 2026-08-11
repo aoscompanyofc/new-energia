@@ -31,10 +31,10 @@ export function ServiceFAQ({ items }: ServiceFAQProps) {
                   aria-expanded={isOpen}
                   onClick={() => setOpenIndex(isOpen ? -1 : index)}
                 >
-                  <span className={`font-heading text-sm sm:text-base ${isOpen ? "text-gold" : "text-white"}`}>
+                  <span className={`font-heading text-sm sm:text-base ${isOpen ? "text-accent" : "text-white"}`}>
                     {item.q}
                   </span>
-                  <span className={isOpen ? "text-gold" : "text-white"}>
+                  <span className={isOpen ? "text-accent" : "text-white"}>
                     {isOpen ? <MinusIcon className="h-4 w-4" /> : <PlusIcon className="h-4 w-4" />}
                   </span>
                 </button>

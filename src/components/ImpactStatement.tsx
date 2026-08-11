@@ -9,7 +9,7 @@ export function ImpactStatement() {
   return (
     <section ref={scope} className="bg-navy px-5 py-24 lg:px-8">
       <div className="mx-auto max-w-4xl text-center">
-        <p data-reveal className="font-heading text-sm font-medium text-gold">
+        <p data-reveal className="font-heading text-sm font-medium text-accent">
           {impact.eyebrow}
         </p>
         <h2 data-reveal className="mt-4 font-heading text-3xl font-medium leading-tight text-white sm:text-4xl">

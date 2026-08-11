@@ -35,7 +35,7 @@ export function ImpactAccordion() {
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:gap-20">
         <div data-reveal>
           <h2 className="font-heading text-3xl font-medium leading-tight text-white sm:text-4xl md:text-[3rem]">
-            {impactAccordion.title} <span className="text-gold">{impactAccordion.titleHighlight}</span>
+            {impactAccordion.title} <span className="text-accent">{impactAccordion.titleHighlight}</span>
           </h2>
         </div>
 
@@ -43,17 +43,17 @@ export function ImpactAccordion() {
           {impactAccordion.items.map((item, index) => {
             const isOpen = index === openIndex;
             return (
-              <div key={item.title} className={`rounded-xl border ${isOpen ? "border-gold" : "border-white/15"}`}>
+              <div key={item.title} className={`rounded-xl border ${isOpen ? "border-accent" : "border-white/15"}`}>
                 <button
                   type="button"
                   className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                   aria-expanded={isOpen}
                   onClick={() => setOpenIndex(isOpen ? -1 : index)}
                 >
-                  <span className={`font-heading text-base sm:text-lg ${isOpen ? "text-gold" : "text-white"}`}>
+                  <span className={`font-heading text-base sm:text-lg ${isOpen ? "text-accent" : "text-white"}`}>
                     {item.title}
                   </span>
-                  <span className={isOpen ? "text-gold" : "text-white"}>
+                  <span className={isOpen ? "text-accent" : "text-white"}>
                     {isOpen ? <MinusIcon className="h-5 w-5" /> : <PlusIcon className="h-5 w-5" />}
                   </span>
                 </button>

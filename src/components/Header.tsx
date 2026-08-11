@@ -26,7 +26,7 @@ export function Header() {
   }, [isMobileOpen]);
 
   const navLinkClass = (active: boolean) =>
-    `font-heading text-sm transition hover:text-gold ${active ? "text-gold" : "text-white"}`;
+    `font-heading text-sm transition hover:text-accent ${active ? "text-accent" : "text-white"}`;
 
   return (
     <header
@@ -38,7 +38,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-2" aria-label="New — Engenharia e Energia">
           <span className="font-heading text-2xl font-semibold leading-none text-white">
             {nav.logoTitle}
-            <span className="text-gold">.</span>
+            <span className="text-accent">.</span>
           </span>
           <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-white/70 sm:block">
             {nav.logoSubtitle}
@@ -59,7 +59,7 @@ export function Header() {
           >
             <button
               type="button"
-              className="flex items-center gap-1 font-heading text-sm text-white transition hover:text-gold"
+              className="flex items-center gap-1 font-heading text-sm text-white transition hover:text-accent"
               aria-expanded={isServicesOpen}
               onClick={() => setIsServicesOpen((v) => !v)}
             >
@@ -72,7 +72,7 @@ export function Header() {
                   <Link
                     key={service.label}
                     to={service.href}
-                    className="block border-b border-gold/20 px-5 py-3 text-sm text-white/90 transition last:border-b-0 hover:bg-gold hover:text-navy"
+                    className="block border-b border-accent/20 px-5 py-3 text-sm text-white/90 transition last:border-b-0 hover:bg-accent hover:text-navy"
                   >
                     {service.label}
                   </Link>
@@ -111,7 +111,7 @@ export function Header() {
           <div className="flex items-center justify-between px-5 py-4">
             <span className="font-heading text-2xl font-semibold text-white">
               {nav.logoTitle}
-              <span className="text-gold">.</span>
+              <span className="text-accent">.</span>
             </span>
             <button
               type="button"
@@ -125,14 +125,14 @@ export function Header() {
           <nav className="flex flex-col gap-1 px-5 py-4">
             <Link
               to="/"
-              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/" ? "text-gold" : "text-white"}`}
+              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/" ? "text-accent" : "text-white"}`}
               onClick={() => setIsMobileOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/sobre"
-              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/sobre" ? "text-gold" : "text-white"}`}
+              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/sobre" ? "text-accent" : "text-white"}`}
               onClick={() => setIsMobileOpen(false)}
             >
               Sobre
@@ -175,7 +175,7 @@ export function Header() {
             </Link>
             <Link
               to="/blog"
-              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/blog" ? "text-gold" : "text-white"}`}
+              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/blog" ? "text-accent" : "text-white"}`}
               onClick={() => setIsMobileOpen(false)}
             >
               Blog

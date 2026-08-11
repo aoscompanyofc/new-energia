@@ -4,7 +4,7 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 import { PillButton } from "./PillButton";
 
 const inputClass =
-  "w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-sm text-navy placeholder:text-navy/40 outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/30";
+  "w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-sm text-navy placeholder:text-navy/40 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/30";
 
 export function ContactForm() {
   const scope = useScrollReveal<HTMLElement>();

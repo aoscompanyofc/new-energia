@@ -52,7 +52,7 @@ export function MissionVision() {
             <h3 className="mt-4 font-heading text-xl font-semibold text-navy">{quemSomos.mission.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-navy/70">{quemSomos.mission.text}</p>
           </div>
-          <div data-reveal className="rounded-2xl bg-gold p-8">
+          <div data-reveal className="rounded-2xl bg-accent p-8">
             <span className="font-heading text-3xl font-semibold text-navy/30">{quemSomos.vision.number}</span>
             <h3 className="mt-4 font-heading text-xl font-semibold text-navy">{quemSomos.vision.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-navy/80">{quemSomos.vision.text}</p>

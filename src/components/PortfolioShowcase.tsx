@@ -14,7 +14,7 @@ export function PortfolioShowcase() {
           <div data-reveal className="max-w-xl">
             <p className="font-heading text-sm font-medium text-navy/60">{portfolio.eyebrow}</p>
             <h2 className="mt-3 font-heading text-3xl font-medium leading-tight text-navy sm:text-4xl md:text-5xl">
-              {portfolio.title} <span className="text-gold">{portfolio.titleHighlight}</span>
+              {portfolio.title} <span className="text-accent">{portfolio.titleHighlight}</span>
             </h2>
           </div>
           <div data-reveal>
@@ -45,7 +45,7 @@ export function PortfolioShowcase() {
                 <h3 className="font-heading text-base font-semibold text-white">{project.name}</h3>
                 <p className="mt-2 text-xs text-white/60">Quantidade de módulos: {project.modules}</p>
                 <p className="text-xs text-white/60">Geração média: {project.generation}</p>
-                <a href="/#contato" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold">
+                <a href="/#contato" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">
                   Saiba mais
                   <span aria-hidden="true">&rarr;</span>
                 </a>
