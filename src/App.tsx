@@ -7,6 +7,7 @@ import Sobre from "./pages/Sobre";
 import Service from "./pages/Service";
 import Blog from "./pages/Blog";
 import InvestorsEletroposto from "./pages/InvestorsEletroposto";
+import Ecosystem from "./pages/Ecosystem";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/servicos/:slug" element={<Service />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/investidores/eletroposto" element={<InvestorsEletroposto />} />
+          <Route path="/ecossistema" element={<Ecosystem />} />
         </Routes>
       </main>
       <Footer />

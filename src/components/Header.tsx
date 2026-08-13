@@ -47,6 +47,9 @@ export function Header() {
           <Link to="/sobre" className={navLinkClass(pathname === "/sobre")}>
             Sobre
           </Link>
+          <Link to="/ecossistema" className={navLinkClass(pathname === "/ecossistema")}>
+            Ecossistema
+          </Link>
           <div
             className="relative"
             onMouseEnter={() => setIsServicesOpen(true)}
@@ -128,6 +131,13 @@ export function Header() {
               onClick={() => setIsMobileOpen(false)}
             >
               Sobre
+            </Link>
+            <Link
+              to="/ecossistema"
+              className={`border-b border-white/10 py-4 font-heading text-lg ${pathname === "/ecossistema" ? "text-accent" : "text-white"}`}
+              onClick={() => setIsMobileOpen(false)}
+            >
+              Ecossistema
             </Link>
             <button
               type="button"
