@@ -12,6 +12,12 @@ import eletropostoHeroInvest1920 from "../assets/photos/eletroposto-hero-invest-
 import eletropostoOverviewInvest900 from "../assets/photos/eletroposto-overview-invest-900.webp";
 import eletropostoHeroServico1920 from "../assets/photos/eletroposto-hero-servico-1920.webp";
 import eletropostoOverviewServico900 from "../assets/photos/eletroposto-overview-servico-900.webp";
+import omHero1920 from "../assets/photos/om-hero-1920.webp";
+import omOverview900 from "../assets/photos/om-overview-900.webp";
+import bessHero1920 from "../assets/photos/bess-hero-1920.webp";
+import bessOverview900 from "../assets/photos/bess-overview-900.webp";
+import eficienciaHero1920 from "../assets/photos/eficiencia-hero-1920.webp";
+import eficienciaOverview900 from "../assets/photos/eficiencia-overview-900.webp";
 
 export const images = {
   heroBg: heroSunset,
@@ -39,4 +45,11 @@ export const images = {
   eletropostoOverviewInvest: eletropostoOverviewInvest900,
   eletropostoHeroServico: eletropostoHeroServico1920,
   eletropostoOverviewServico: eletropostoOverviewServico900,
+
+  omHero: omHero1920,
+  omOverview: omOverview900,
+  bessHero: bessHero1920,
+  bessOverview: bessOverview900,
+  eficienciaHero: eficienciaHero1920,
+  eficienciaOverview: eficienciaOverview900,
 } as const;

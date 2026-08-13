@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { nav } from "../data/content";
 import { ChevronIcon, CloseIcon, MenuIcon } from "./Icons";
 import { WhatsAppButton } from "./WhatsAppButton";
+import logo from "../assets/logo/new-logo-white.webp";
 
 export function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -35,14 +36,8 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link to="/" className="flex items-center gap-2" aria-label="New — Engenharia e Energia">
-          <span className="font-heading text-2xl font-semibold leading-none text-white">
-            {nav.logoTitle}
-            <span className="text-accent">.</span>
-          </span>
-          <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-white/70 sm:block">
-            {nav.logoSubtitle}
-          </span>
+        <Link to="/" className="flex items-center" aria-label="New — Engenharia e Energia">
+          <img src={logo} alt="New Engenharia e Energia" className="h-10 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -109,10 +104,7 @@ export function Header() {
       {isMobileOpen && (
         <div className="fixed inset-0 z-50 bg-navy lg:hidden">
           <div className="flex items-center justify-between px-5 py-4">
-            <span className="font-heading text-2xl font-semibold text-white">
-              {nav.logoTitle}
-              <span className="text-accent">.</span>
-            </span>
+            <img src={logo} alt="New Engenharia e Energia" className="h-9 w-auto" />
             <button
               type="button"
               className="flex h-10 w-10 items-center justify-center rounded-full text-white"

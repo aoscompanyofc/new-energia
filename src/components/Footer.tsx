@@ -1,5 +1,6 @@
 import { footer, whatsapp } from "../data/content";
 import { ChevronIcon, InstagramIcon, MailIcon, PinIcon, WhatsappIcon } from "./Icons";
+import logo from "../assets/logo/new-logo-white.webp";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -9,12 +10,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 sm:grid-cols-3">
           <div>
-            <span className="font-heading text-2xl font-semibold text-white">
-              New<span className="text-accent">.</span>
-            </span>
-            <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.2em] text-white/60">
-              Engenharia e Energia
-            </p>
+            <img src={logo} alt="New Engenharia e Energia" className="h-11 w-auto" />
             <div className="mt-6 flex gap-3">
               <a
                 href="https://instagram.com"

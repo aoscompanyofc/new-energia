@@ -18,8 +18,6 @@ export const whatsapp = {
 };
 
 export const nav = {
-  logoTitle: "New",
-  logoSubtitle: "Engenharia e Energia",
   links: [
     { label: "Home", href: "#home" },
     { label: "Sobre", href: "#sobre" },

@@ -34,11 +34,11 @@ export const servicesContent: Record<ServiceKey, ServicePageData> = {
     hero: {
       title: "BESS",
       subtitle: "Armazenamento de energia para máxima eficiência e segurança operacional",
-      image: images.portfolio4,
+      image: images.bessHero,
       breadcrumbLabel: "Bess",
     },
     overview: {
-      image: images.portfolio3,
+      image: images.bessOverview,
       imageAlt: "Sistema de armazenamento de energia BESS instalado ao lado de uma usina solar",
       heading: "Reduza custos no horário ponta, evite ultrapassagens de demanda e garanta operação contínua.",
       paragraphs: [
@@ -166,11 +166,11 @@ export const servicesContent: Record<ServiceKey, ServicePageData> = {
     hero: {
       title: "Eficiência Energética",
       subtitle: "Reduza desperdícios e aumente a performance da sua operação.",
-      image: images.heroBg,
+      image: images.eficienciaHero,
       breadcrumbLabel: "Eficiência Energética",
     },
     overview: {
-      image: images.aboutTeaser,
+      image: images.eficienciaOverview,
       imageAlt: "Painel solar com representação de eficiência energética",
       heading: "Eficiência energética para reduzir custos e aumentar performance",
       paragraphs: [
@@ -520,11 +520,11 @@ export const servicesContent: Record<ServiceKey, ServicePageData> = {
     hero: {
       title: "O&M",
       subtitle: "Operação e Manutenção de Usinas Solares",
-      image: images.portfolio2,
+      image: images.omHero,
       breadcrumbLabel: "O&M",
     },
     overview: {
-      image: images.portfolio5,
+      image: images.omOverview,
       imageAlt: "Técnico da New Energia realizando manutenção em quadro elétrico de usina solar",
       heading: "Cuidado contínuo para o melhor desempenho da sua usina",
       paragraphs: [
