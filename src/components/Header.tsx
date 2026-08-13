@@ -37,7 +37,7 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <Link to="/" className="flex items-center" aria-label="New — Engenharia e Energia">
-          <img src={logo} alt="New Engenharia e Energia" className="h-10 w-auto" />
+          <img src={logo} alt="New Engenharia e Energia" className="h-16 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -104,7 +104,7 @@ export function Header() {
       {isMobileOpen && (
         <div className="fixed inset-0 z-50 bg-navy lg:hidden">
           <div className="flex items-center justify-between px-5 py-4">
-            <img src={logo} alt="New Engenharia e Energia" className="h-9 w-auto" />
+            <img src={logo} alt="New Engenharia e Energia" className="h-12 w-auto" />
             <button
               type="button"
               className="flex h-10 w-10 items-center justify-center rounded-full text-white"
