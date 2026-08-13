@@ -7,7 +7,13 @@ import { PillButton } from "./PillButton";
 const cardStyles = [
   "bg-white/5 text-white ring-1 ring-white/10",
   "bg-accent text-navy",
-  "bg-transparent text-white ring-1 ring-accent/60",
+  "bg-white/[0.03] text-white border border-accent/70",
+];
+
+const iconBadgeStyles = [
+  "bg-accent/10 ring-1 ring-accent/20",
+  "bg-navy/10 ring-1 ring-navy/15",
+  "bg-accent/10 ring-1 ring-accent/25",
 ];
 
 export function Benefits() {
@@ -40,10 +46,16 @@ export function Benefits() {
                 style={{ minHeight: "300px" }}
               >
                 <div>
-                  <DynamicIcon
-                    name={item.icon as IconName}
-                    className={`h-9 w-9 ${index % 3 === 1 ? "text-navy" : "text-accent"}`}
-                  />
+                  <span
+                    className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl shadow-[0_1px_0_0_rgba(255,255,255,0.06)_inset] ${
+                      iconBadgeStyles[index % iconBadgeStyles.length]
+                    }`}
+                  >
+                    <DynamicIcon
+                      name={item.icon as IconName}
+                      className={`h-7 w-7 ${index % 3 === 1 ? "text-navy" : "text-accent"}`}
+                    />
+                  </span>
                   <h3 className="mt-8 font-heading text-xl font-semibold">{item.title}</h3>
                   <p className={`mt-3 text-sm leading-relaxed ${index % 3 === 1 ? "text-navy/80" : "opacity-70"}`}>
                     {item.description}

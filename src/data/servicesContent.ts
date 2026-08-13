@@ -381,12 +381,12 @@ export const servicesContent: Record<ServiceKey, ServicePageData> = {
     hero: {
       title: "Eletroposto",
       subtitle: "Infraestrutura completa para recarga de veículos elétricos",
-      image: images.heroBg,
+      image: images.eletropostoHeroServico,
       breadcrumbLabel: "Mobilidade Elétrica",
     },
     overview: {
-      image: images.portfolio4,
-      imageAlt: "Carport solar com pontos de recarga para veículos elétricos",
+      image: images.eletropostoOverviewServico,
+      imageAlt: "Cliente utilizando ponto de recarga de veículo elétrico",
       heading: "Soluções para empresas, condomínios e frotas — com segurança, gestão e integração com energia solar.",
       paragraphs: [
         "A NEW ENERGIA entrega projetos completos de infraestrutura de recarga para mobilidade elétrica, garantindo capacidade, segurança e eficiência.",

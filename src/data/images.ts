@@ -8,6 +8,10 @@ import paineisCloseup900 from "../assets/photos/paineis-closeup-900.webp";
 import equipeNew900 from "../assets/photos/equipe-new-900.webp";
 import equipeNew1920 from "../assets/photos/equipe-new-1920.webp";
 import instalacaoEquipe900 from "../assets/photos/instalacao-equipe-900.webp";
+import eletropostoHeroInvest1920 from "../assets/photos/eletroposto-hero-invest-1920.webp";
+import eletropostoOverviewInvest900 from "../assets/photos/eletroposto-overview-invest-900.webp";
+import eletropostoHeroServico1920 from "../assets/photos/eletroposto-hero-servico-1920.webp";
+import eletropostoOverviewServico900 from "../assets/photos/eletroposto-overview-servico-900.webp";
 
 export const images = {
   heroBg: heroSunset,
@@ -30,4 +34,9 @@ export const images = {
   portfolio4: plantaPiumhi900,
   portfolio5: instalacaoEquipe900,
   portfolio6: plantaUrbana900,
+
+  eletropostoHeroInvest: eletropostoHeroInvest1920,
+  eletropostoOverviewInvest: eletropostoOverviewInvest900,
+  eletropostoHeroServico: eletropostoHeroServico1920,
+  eletropostoOverviewServico: eletropostoOverviewServico900,
 } as const;

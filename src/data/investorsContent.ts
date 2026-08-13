@@ -7,12 +7,12 @@ export const eletropostoInvestment = {
   hero: {
     title: "Invista em Eletropostos",
     subtitle: "Participe da infraestrutura de recarga elétrica e diversifique seus investimentos.",
-    image: images.heroBg,
+    image: images.eletropostoHeroInvest,
     breadcrumbLabel: "Investidores",
   },
   overview: {
-    image: images.portfolio2,
-    imageAlt: "Painéis solares associados à infraestrutura de recarga elétrica",
+    image: images.eletropostoOverviewInvest,
+    imageAlt: "Ponto de recarga de veículo elétrico em uso",
     heading: "Invista na infraestrutura que vai movimentar a mobilidade elétrica no Brasil",
     leadParagraph:
       "Diversifique seu portfólio participando da implantação e operação de eletropostos administrados pela New Energia.",
