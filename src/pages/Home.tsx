@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { Hero } from "../components/Hero";
 import { Benefits } from "../components/Benefits";
 import { About } from "../components/About";
+import { EcosystemSection } from "../components/EcosystemSection";
 import { ImpactAccordion } from "../components/ImpactAccordion";
 import { ClientsCarousel } from "../components/ClientsCarousel";
 import { PortfolioShowcase } from "../components/PortfolioShowcase";
@@ -34,6 +35,7 @@ export default function Home() {
       <Hero />
       <Benefits />
       <About />
+      <EcosystemSection />
       <ImpactAccordion />
       <ClientsCarousel />
       <PortfolioShowcase />
