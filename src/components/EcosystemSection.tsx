@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ecosystem } from "../data/ecosystemContent";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { DynamicIcon } from "./Icons";
