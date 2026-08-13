@@ -386,7 +386,7 @@ export const servicesContent: Record<ServiceKey, ServicePageData> = {
     },
     overview: {
       image: images.eletropostoOverviewServico,
-      imageAlt: "Cliente utilizando ponto de recarga de veículo elétrico",
+      imageAlt: "Veículo elétrico carregando com cliente ao fundo",
       heading: "Soluções para empresas, condomínios e frotas — com segurança, gestão e integração com energia solar.",
       paragraphs: [
         "A NEW ENERGIA entrega projetos completos de infraestrutura de recarga para mobilidade elétrica, garantindo capacidade, segurança e eficiência.",
