@@ -26,6 +26,10 @@ export function FounderSection() {
             height={1080}
             loading="lazy"
             className="relative h-[420px] w-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.45)] sm:h-[520px] lg:h-[600px]"
+            style={{
+              maskImage: "linear-gradient(to bottom, black 82%, transparent 98%)",
+              WebkitMaskImage: "linear-gradient(to bottom, black 82%, transparent 98%)",
+            }}
           />
         </div>
 
