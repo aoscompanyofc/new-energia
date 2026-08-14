@@ -26,8 +26,8 @@ export function MissionVision() {
 
           <div data-reveal className="flex flex-col gap-6 sm:flex-row sm:items-start">
             <img
-              src={images.aboutTeam}
-              alt="Equipe técnica da New Energia em campo"
+              src={images.missionTeam}
+              alt="Equipe técnica da New Energia realizando instalação em campo"
               width={220}
               height={220}
               loading="lazy"

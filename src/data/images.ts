@@ -1,17 +1,21 @@
 import heroSunset from "../assets/photos/hero-sunset-1920.webp";
+import heroPerdigao1920 from "../assets/photos/hero-perdigao-1920.webp";
 import plantaPerdigao1200 from "../assets/photos/planta-perdigao-1200.webp";
-import plantaPerdigao480 from "../assets/photos/planta-perdigao-480.webp";
 import plantaUrbana900 from "../assets/photos/planta-urbana-900.webp";
 import plantaUrbana480 from "../assets/photos/planta-urbana-480.webp";
 import plantaPiumhi900 from "../assets/photos/planta-piumhi-900.webp";
+import plantaPiumhi480 from "../assets/photos/planta-piumhi-480.webp";
 import paineisCloseup900 from "../assets/photos/paineis-closeup-900.webp";
+import paineisCloseup1920 from "../assets/photos/paineis-closeup-1920.webp";
 import equipeNew900 from "../assets/photos/equipe-new-900.webp";
 import equipeNew1920 from "../assets/photos/equipe-new-1920.webp";
 import instalacaoEquipe900 from "../assets/photos/instalacao-equipe-900.webp";
+import instalacaoEquipe1920 from "../assets/photos/instalacao-equipe-1920.webp";
 import eletropostoHeroInvest1920 from "../assets/photos/eletroposto-hero-invest-1920.webp";
 import eletropostoOverviewInvest900 from "../assets/photos/eletroposto-overview-invest-900.webp";
 import eletropostoHeroServico1920 from "../assets/photos/eletroposto-hero-servico-1920.webp";
 import eletropostoOverviewServico900 from "../assets/photos/eletroposto-overview-servico-900.webp";
+import eletropostoCard480 from "../assets/photos/eletroposto-card-480.webp";
 import omHero1920 from "../assets/photos/om-hero-1920.webp";
 import omOverview900 from "../assets/photos/om-overview-900.webp";
 import bessHero1920 from "../assets/photos/bess-hero-1920.webp";
@@ -21,19 +25,18 @@ import eficienciaOverview900 from "../assets/photos/eficiencia-overview-900.webp
 import founderBreno from "../assets/photos/founder-breno.webp";
 
 export const images = {
-  heroBg: heroSunset,
-  heroCardInvest: plantaPerdigao480,
+  heroBg: heroPerdigao1920,
+  heroCardInvest: plantaPiumhi480,
+  heroCardEletroposto: eletropostoCard480,
   heroCardDiscount: plantaUrbana480,
 
-  aboutTeaser: plantaPerdigao1200,
+  homeAboutTeaser: paineisCloseup900,
+  aboutTeaser: plantaUrbana900,
   aboutHero: heroSunset,
   aboutTeam: equipeNew900,
+  missionTeam: instalacaoEquipe900,
 
   finalCta: equipeNew1920,
-
-  service1: plantaPerdigao1200,
-  service2: plantaPiumhi900,
-  service3: heroSunset,
 
   portfolio1: plantaPerdigao1200,
   portfolio2: plantaUrbana900,
@@ -41,6 +44,13 @@ export const images = {
   portfolio4: plantaPiumhi900,
   portfolio5: instalacaoEquipe900,
   portfolio6: plantaUrbana900,
+
+  descontoHero: instalacaoEquipe1920,
+  descontoOverview: plantaPiumhi900,
+  gereHero: heroSunset,
+  gereOverview: instalacaoEquipe900,
+  usinasHero: paineisCloseup1920,
+  usinasOverview: plantaUrbana900,
 
   eletropostoHeroInvest: eletropostoHeroInvest1920,
   eletropostoOverviewInvest: eletropostoOverviewInvest900,

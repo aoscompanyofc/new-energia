@@ -60,7 +60,7 @@ export const hero = {
       title: "em mobilidade elétrica",
       highlight: "diversifique seu portfólio",
       description: "Participe da infraestrutura de recarga elétrica em expansão",
-      image: "heroCardInvest",
+      image: "heroCardEletroposto",
       href: "/investidores/eletroposto",
       external: false,
     },

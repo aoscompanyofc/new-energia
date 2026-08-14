@@ -12,8 +12,8 @@ export function About() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <div data-reveal>
           <img
-            src={images.aboutTeaser}
-            alt="Equipe técnica da New Energia realizando manutenção em usina solar"
+            src={images.homeAboutTeaser}
+            alt="Close-up de painéis solares da New Energia"
             width={900}
             height={700}
             loading="lazy"

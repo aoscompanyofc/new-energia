@@ -6,7 +6,6 @@ import { TeamSection } from "../components/TeamSection";
 import { StatsCounter } from "../components/StatsCounter";
 import { MissionVision } from "../components/MissionVision";
 import { ImpactStatement } from "../components/ImpactStatement";
-import { PortfolioShowcase } from "../components/PortfolioShowcase";
 import { FinalCTA } from "../components/FinalCTA";
 import { images } from "../data/images";
 import { sobrePage } from "../data/content";
@@ -32,7 +31,6 @@ export default function Sobre() {
       <StatsCounter />
       <MissionVision />
       <ImpactStatement />
-      <PortfolioShowcase />
       <FinalCTA />
     </>
   );

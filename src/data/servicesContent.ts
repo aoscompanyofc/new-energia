@@ -274,11 +274,11 @@ export const servicesContent: Record<ServiceKey, ServicePageData> = {
     hero: {
       title: "Energia com desconto",
       subtitle: "Até 20% de desconto na conta de luz todos os meses.",
-      image: images.portfolio2,
+      image: images.descontoHero,
       breadcrumbLabel: "Energia com Desconto",
     },
     overview: {
-      image: images.portfolio3,
+      image: images.descontoOverview,
       imageAlt: "Conta de luz sobre painel solar, representando economia com energia com desconto",
       heading: "Sua conta de luz pode ser menor já no próximo mês",
       paragraphs: [
@@ -642,11 +642,11 @@ export const servicesContent: Record<ServiceKey, ServicePageData> = {
     hero: {
       title: "Gere sua própria energia",
       subtitle: "com uma usina fotovoltaica da NEW ENERGIA",
-      image: images.aboutTeaser,
+      image: images.gereHero,
       breadcrumbLabel: "Gere sua própria energia",
     },
     overview: {
-      image: images.portfolio4,
+      image: images.gereOverview,
       imageAlt: "Usina fotovoltaica instalada em propriedade rural",
       heading: "Autonomia, economia e tecnologia para empresas, indústrias e produtores rurais.",
       paragraphs: [
@@ -771,11 +771,11 @@ export const servicesContent: Record<ServiceKey, ServicePageData> = {
     hero: {
       title: "Usinas de Investimento (Cotas)",
       subtitle: "Invista em energia solar e receba renda mensal previsível.",
-      image: images.heroBg,
+      image: images.usinasHero,
       breadcrumbLabel: "Usinas de Investimento",
     },
     overview: {
-      image: images.portfolio5,
+      image: images.usinasOverview,
       imageAlt: "Equipe técnica da New Energia instalando painéis solares de usina de investimento",
       heading: "Invista em energia limpa com retorno real e previsível",
       leadParagraph:
