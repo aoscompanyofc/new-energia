@@ -23,13 +23,13 @@ export function EcosystemSection() {
         <p className="mt-4 text-base leading-relaxed text-white/70">{ecosystem.subtitle}</p>
       </div>
 
-      {/* Linha do tempo horizontal — xl+ (largura mínima pra 8 itens não se sobreporem) */}
-      <div className="relative mt-20 hidden xl:block" data-reveal>
+      {/* Linha do tempo horizontal — lg+ */}
+      <div className="relative mt-20 hidden lg:block" data-reveal>
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-accent/0 via-accent/40 to-accent/0"
         />
-        <div className="mx-auto flex max-w-6xl items-start justify-between gap-3">
+        <div className="mx-auto flex max-w-5xl items-start justify-center gap-6">
           <div className="flex w-32 shrink-0 flex-col items-center text-center">
             <div className={`flex ${MIN_HEIGHT} items-end justify-center pb-3`}>
               <span className="text-xs font-semibold uppercase tracking-wide text-white/70">
@@ -64,8 +64,8 @@ export function EcosystemSection() {
         </div>
       </div>
 
-      {/* Lista conectada vertical — mobile/tablet/notebook */}
-      <div className="relative mx-auto mt-16 max-w-md xl:hidden" data-reveal>
+      {/* Lista conectada vertical — mobile/tablet */}
+      <div className="relative mx-auto mt-16 max-w-md lg:hidden" data-reveal>
         <div aria-hidden="true" className="absolute bottom-2 left-[22px] top-2 w-px bg-gradient-to-b from-accent/0 via-accent/40 to-accent/0" />
         <div className="flex flex-col gap-8">
           <div className="relative flex items-center gap-4">

@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { PageHero } from "../components/PageHero";
 import { AboutIntro } from "../components/AboutIntro";
 import { FounderSection } from "../components/FounderSection";
+import { TeamSection } from "../components/TeamSection";
 import { StatsCounter } from "../components/StatsCounter";
 import { MissionVision } from "../components/MissionVision";
 import { ImpactStatement } from "../components/ImpactStatement";
@@ -27,6 +28,7 @@ export default function Sobre() {
       />
       <AboutIntro />
       <FounderSection />
+      <TeamSection />
       <StatsCounter />
       <MissionVision />
       <ImpactStatement />

@@ -151,6 +151,26 @@ export const founder = {
   ],
 };
 
+export const team = {
+  eyebrow: "Nosso time",
+  title: "Quem faz a New acontecer",
+  leadershipLabel: "Liderança",
+  leadership: [
+    { name: "Breno Nazaré Lima", role: "CEO e Fundador do Grupo New Engenharia e Energia" },
+    { name: "Philippe Leão", role: "Engenheiro e Sócio da empresa New Charged" },
+    { name: "Alessandra Reis", role: "Engenheira e sócia das empresas EKON e New Academy" },
+    { name: "Mariana Melo", role: "Engenheira" },
+    { name: "Monica Lustoza", role: "Head de Vendas e Parcerias" },
+  ],
+  operationalLabel: "Equipe operacional",
+  operational: [
+    { name: "Arthur Oliveira", role: "Gestor de Tráfego e Webdesigner" },
+    { name: "Ana Gaudencio", role: "Gestão de Projetos e Prospecção" },
+    { name: "Júlia Bomtempo", role: "Social Media" },
+    { name: "Nicoli Keise", role: "SDR" },
+  ],
+};
+
 export const sobrePage = {
   hero: {
     title: "NEW Engenharia e Energia",

@@ -49,33 +49,33 @@ export function NewChargedPopup() {
         <img src={newChargedLogo} alt="NewCharged" className="mx-auto h-10 w-auto" />
 
         <p className="mt-6 text-xs font-medium uppercase tracking-[0.2em] text-accent">
-          Novidade · Mobilidade elétrica
+          Inauguração · 15 de agosto
         </p>
 
         <h2
           id="newcharged-popup-title"
           className="mt-3 font-heading text-2xl font-medium leading-tight text-white sm:text-3xl"
         >
-          Recarregue seu elétrico em Belo Horizonte e região
+          Carregue seu carro sem custo nenhum!
         </h2>
 
         <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-white/70 sm:text-base">
-          A NewCharged, a rede de eletropostos da New Energia, chegou para revolucionar a
-          mobilidade elétrica em BH: pontos modernos, rápidos e disponíveis 24 horas.
+          Amanhã, dia 15 de agosto, é a inauguração do nosso eletroposto na Rodoviária de Belo
+          Horizonte. Venha conhecer e carregue seu veículo elétrico gratuitamente.
         </p>
 
         <dl className="mx-auto mt-7 grid max-w-sm grid-cols-3 gap-4 border-y border-white/10 py-5">
           <div>
-            <dt className="text-[11px] uppercase tracking-wider text-white/50">Potência</dt>
-            <dd className="font-heading text-2xl font-semibold text-white">60kW</dd>
+            <dt className="text-[11px] uppercase tracking-wider text-white/50">Data</dt>
+            <dd className="font-heading text-2xl font-semibold text-white">15/08</dd>
           </div>
           <div>
-            <dt className="text-[11px] uppercase tracking-wider text-white/50">Operação</dt>
-            <dd className="font-heading text-2xl font-semibold text-white">24h</dd>
+            <dt className="text-[11px] uppercase tracking-wider text-white/50">Local</dt>
+            <dd className="font-heading text-lg font-semibold leading-tight text-white">Rodoviária BH</dd>
           </div>
           <div>
-            <dt className="text-[11px] uppercase tracking-wider text-white/50">Pontos em BH</dt>
-            <dd className="font-heading text-2xl font-semibold text-white">6+</dd>
+            <dt className="text-[11px] uppercase tracking-wider text-white/50">Recarga</dt>
+            <dd className="font-heading text-2xl font-semibold text-white">Grátis</dd>
           </div>
         </dl>
 
