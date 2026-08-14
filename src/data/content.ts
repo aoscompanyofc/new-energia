@@ -140,6 +140,17 @@ export const about = {
   cta: "Conheça nossa história",
 };
 
+export const founder = {
+  eyebrow: "Fundador",
+  name: "Breno Nazaré Lima",
+  role: "Fundador da New Energia",
+  credentials: [
+    "Engenheiro Eletricista — PUC",
+    "Mestre em Gerenciamento de Projetos — USP",
+    "Engenheiro associado da AEE com certificação mundial CMVP",
+  ],
+};
+
 export const sobrePage = {
   hero: {
     title: "NEW Engenharia e Energia",

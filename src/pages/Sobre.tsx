@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { PageHero } from "../components/PageHero";
 import { AboutIntro } from "../components/AboutIntro";
+import { FounderSection } from "../components/FounderSection";
 import { StatsCounter } from "../components/StatsCounter";
 import { MissionVision } from "../components/MissionVision";
 import { ImpactStatement } from "../components/ImpactStatement";
@@ -25,6 +26,7 @@ export default function Sobre() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Sobre" }]}
       />
       <AboutIntro />
+      <FounderSection />
       <StatsCounter />
       <MissionVision />
       <ImpactStatement />
