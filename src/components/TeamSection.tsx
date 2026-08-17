@@ -19,6 +19,7 @@ const PHOTOS: Record<string, string> = {
   "Monica Lustoza": images.teamMonica,
   "Ana Gaudencio": images.teamAna,
   "Nicoli Keise": images.teamNicoli,
+  "Arthur Oliveira": images.teamArthur,
 };
 
 function TeamCard({ name, role }: { name: string; role: string }) {

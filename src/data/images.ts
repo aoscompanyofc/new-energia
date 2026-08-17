@@ -28,6 +28,7 @@ import teamMariana from "../assets/photos/team-mariana.webp";
 import teamNicoli from "../assets/photos/team-nicoli.webp";
 import teamAna from "../assets/photos/team-ana.webp";
 import teamMonica from "../assets/photos/team-monica.webp";
+import teamArthur from "../assets/photos/team-arthur.webp";
 
 export const images = {
   heroBg: heroPerdigao1920,
@@ -77,4 +78,5 @@ export const images = {
   teamNicoli,
   teamAna,
   teamMonica,
+  teamArthur,
 } as const;
