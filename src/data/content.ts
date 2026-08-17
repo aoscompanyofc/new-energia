@@ -462,6 +462,10 @@ export const finalCta = {
   cta: "Falar com Especialista",
 };
 
+// URL do App da Web do Google Apps Script vinculado à planilha de leads.
+// Gerada em Extensões > Apps Script > Implantar > Nova implantação (ver instruções enviadas).
+export const googleSheetsEndpoint = "COLE_AQUI_A_URL_DO_APPS_SCRIPT";
+
 export const contactForm = {
   title: "Fale com um especialista",
   text: "Preencha o formulário e nossa equipe entra em contato para entender sua necessidade.",

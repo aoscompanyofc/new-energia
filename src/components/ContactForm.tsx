@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { contactForm } from "../data/content";
+import { contactForm, googleSheetsEndpoint } from "../data/content";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { PillButton } from "./PillButton";
 
@@ -9,10 +9,39 @@ const inputClass =
 export function ContactForm() {
   const scope = useScrollReveal<HTMLElement>();
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSubmitted(true);
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    const payload = {
+      name: data.get("name"),
+      company: data.get("company"),
+      phone: data.get("phone"),
+      email: data.get("email"),
+      service: data.get("service"),
+      message: data.get("message"),
+      page: window.location.pathname,
+    };
+
+    setIsSubmitting(true);
+    setError(false);
+    try {
+      await fetch(googleSheetsEndpoint, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify(payload),
+      });
+      setSubmitted(true);
+      form.reset();
+    } catch {
+      setError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -70,12 +99,17 @@ export function ContactForm() {
             <textarea id="message" name="message" rows={5} className={inputClass} />
           </div>
           <div className="sm:col-span-2 flex flex-col items-center gap-4">
-            <PillButton as="button" type="submit">
-              {contactForm.submit}
+            <PillButton as="button" type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Enviando..." : contactForm.submit}
             </PillButton>
             {submitted && (
               <p role="status" className="text-sm font-medium text-navy/70">
                 Recebemos sua mensagem. Nossa equipe entrará em contato em breve.
+              </p>
+            )}
+            {error && (
+              <p role="status" className="text-sm font-medium text-red-600">
+                Não foi possível enviar agora. Tente novamente em instantes.
               </p>
             )}
           </div>
