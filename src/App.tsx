@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
-import { NewChargedPopup } from "./components/NewChargedPopup";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Service from "./pages/Service";
@@ -13,7 +12,6 @@ import Ecosystem from "./pages/Ecosystem";
 function App() {
   return (
     <>
-      <NewChargedPopup />
       <Header />
       <main>
         <Routes>
