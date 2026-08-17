@@ -23,6 +23,11 @@ import bessOverview900 from "../assets/photos/bess-overview-900.webp";
 import eficienciaHero1920 from "../assets/photos/eficiencia-hero-1920.webp";
 import eficienciaOverview900 from "../assets/photos/eficiencia-overview-900.webp";
 import founderBreno from "../assets/photos/founder-breno.webp";
+import teamAlessandra from "../assets/photos/team-alessandra.webp";
+import teamMariana from "../assets/photos/team-mariana.webp";
+import teamNicoli from "../assets/photos/team-nicoli.webp";
+import teamAna from "../assets/photos/team-ana.webp";
+import teamMonica from "../assets/photos/team-monica.webp";
 
 export const images = {
   heroBg: heroPerdigao1920,
@@ -65,4 +70,11 @@ export const images = {
   eficienciaOverview: eficienciaOverview900,
 
   founder: founderBreno,
+
+  teamBreno: founderBreno,
+  teamAlessandra,
+  teamMariana,
+  teamNicoli,
+  teamAna,
+  teamMonica,
 } as const;

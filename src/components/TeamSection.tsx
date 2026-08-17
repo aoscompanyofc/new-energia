@@ -1,4 +1,5 @@
 import { team } from "../data/content";
+import { images } from "../data/images";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
 function initials(name: string) {
@@ -11,12 +12,34 @@ function initials(name: string) {
     .toUpperCase();
 }
 
+const PHOTOS: Record<string, string> = {
+  "Breno Nazaré Lima": images.teamBreno,
+  "Alessandra Reis": images.teamAlessandra,
+  "Mariana Melo": images.teamMariana,
+  "Monica Lustoza": images.teamMonica,
+  "Ana Gaudencio": images.teamAna,
+  "Nicoli Keise": images.teamNicoli,
+};
+
 function TeamCard({ name, role }: { name: string; role: string }) {
+  const photo = PHOTOS[name];
+
   return (
     <div data-reveal className="flex flex-col items-center rounded-2xl bg-navy/[0.03] p-6 text-center ring-1 ring-navy/10">
-      <span className="flex h-16 w-16 items-center justify-center rounded-full bg-navy font-heading text-lg font-semibold text-accent">
-        {initials(name)}
-      </span>
+      {photo ? (
+        <img
+          src={photo}
+          alt={name}
+          width={128}
+          height={128}
+          loading="lazy"
+          className="h-16 w-16 rounded-full object-cover ring-2 ring-navy/10"
+        />
+      ) : (
+        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-navy font-heading text-lg font-semibold text-accent">
+          {initials(name)}
+        </span>
+      )}
       <p className="mt-4 font-heading text-base font-semibold text-navy">{name}</p>
       <p className="mt-1 text-sm leading-relaxed text-navy/60">{role}</p>
     </div>
