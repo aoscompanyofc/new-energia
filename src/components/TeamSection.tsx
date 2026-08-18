@@ -14,10 +14,12 @@ function initials(name: string) {
 
 const PHOTOS: Record<string, string> = {
   "Breno Nazaré Lima": images.teamBreno,
+  "Philippe Leão": images.teamPhilippe,
   "Alessandra Reis": images.teamAlessandra,
   "Mariana Melo": images.teamMariana,
   "Monica Lustoza": images.teamMonica,
   "Ana Gaudencio": images.teamAna,
+  "Júlia Bomtempo": images.teamJulia,
   "Nicoli Keise": images.teamNicoli,
   "Arthur Oliveira": images.teamArthur,
 };
