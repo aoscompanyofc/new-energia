@@ -8,18 +8,6 @@ export function FounderSection() {
 
   return (
     <section ref={scope} className="relative overflow-hidden bg-navy px-5 py-24 lg:px-8">
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 400 400"
-        className="pointer-events-none absolute -left-24 -top-20 h-[520px] w-[520px] -rotate-6 text-white/[0.06] sm:h-[640px] sm:w-[640px]"
-      >
-        <g stroke="currentColor" strokeWidth="16" strokeLinecap="round" fill="none">
-          <line x1="40" y1="360" x2="150" y2="40" />
-          <line x1="110" y1="360" x2="220" y2="40" />
-          <line x1="180" y1="360" x2="290" y2="40" />
-        </g>
-      </svg>
-
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <div data-reveal className="order-2 flex justify-center lg:order-1">
           <div className="relative">
