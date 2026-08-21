@@ -35,6 +35,10 @@ export function FounderSection() {
               loading="lazy"
               className="relative h-[420px] w-auto object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.45)] sm:h-[480px] lg:h-[560px]"
             />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-navy via-navy/70 to-transparent sm:h-24 lg:h-28"
+            />
           </div>
         </div>
 
