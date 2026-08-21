@@ -22,7 +22,7 @@ import bessHero1920 from "../assets/photos/bess-hero-1920.webp";
 import bessOverview900 from "../assets/photos/bess-overview-900.webp";
 import eficienciaHero1920 from "../assets/photos/eficiencia-hero-1920.webp";
 import eficienciaOverview900 from "../assets/photos/eficiencia-overview-900.webp";
-import founderBreno from "../assets/photos/founder-breno.webp";
+import founderBreno from "../assets/photos/founder-breno-portrait.webp";
 import teamBreno from "../assets/photos/team-breno.webp";
 import teamAlessandra from "../assets/photos/team-alessandra.webp";
 import teamMariana from "../assets/photos/team-mariana.webp";
