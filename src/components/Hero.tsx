@@ -38,7 +38,15 @@ export function Hero() {
         className="absolute inset-0 h-full w-full object-cover"
         fetchPriority="high"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/60 to-navy" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/95 via-navy/85 to-navy" />
+      <div
+        aria-hidden="true"
+        className="absolute -left-24 top-0 h-[480px] w-[480px] rounded-full bg-accent/35 blur-[110px]"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute -right-32 bottom-24 h-[380px] w-[380px] rounded-full bg-accent/25 blur-[110px]"
+      />
 
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <h1 className="max-w-4xl font-heading text-4xl font-medium leading-[1.1] text-white sm:text-5xl md:text-6xl">
@@ -58,7 +66,7 @@ export function Hero() {
         <p data-hero-card className="mt-20 font-heading text-xs font-semibold uppercase tracking-wide text-accent">
           {hero.investmentOpportunitiesLabel}
         </p>
-        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-5 grid gap-4 sm:grid-cols-3">
           {hero.highlightCards.map((card) => (
             <a
               key={card.eyebrow}
@@ -66,7 +74,7 @@ export function Hero() {
               target={card.external ? "_blank" : undefined}
               rel={card.external ? "noreferrer" : undefined}
               data-hero-card
-              className="flex gap-5 rounded-2xl bg-navy/90 p-5 ring-1 ring-white/10 backdrop-blur-sm transition hover:ring-accent/50 sm:p-6"
+              className="group flex items-center gap-4 rounded-2xl bg-white/[0.06] p-4 ring-1 ring-white/15 backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white/[0.09] hover:ring-accent/50"
             >
               <img
                 src={images[card.image as keyof typeof images]}
@@ -74,16 +82,15 @@ export function Hero() {
                 width={112}
                 height={112}
                 loading="lazy"
-                className="h-24 w-24 shrink-0 rounded-xl object-cover sm:h-28 sm:w-28"
+                className="h-14 w-14 shrink-0 rounded-xl object-cover ring-1 ring-white/10"
               />
-              <div>
-                <p className="font-heading text-xs font-semibold uppercase tracking-wide text-white">
+              <div className="min-w-0">
+                <p className="font-heading text-[11px] font-semibold uppercase tracking-wide text-white/70">
                   {card.eyebrow}
                 </p>
-                <p className="mt-2 text-sm text-white">
+                <p className="mt-1 line-clamp-2 text-sm leading-snug text-white">
                   {card.title} <span className="text-accent">{card.highlight}</span>
                 </p>
-                <p className="mt-2 text-xs text-white/60">{card.description}</p>
               </div>
             </a>
           ))}
