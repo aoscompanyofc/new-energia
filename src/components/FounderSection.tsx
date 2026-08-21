@@ -25,15 +25,19 @@ export function FounderSection() {
           <div className="relative">
             <div
               aria-hidden="true"
-              className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-accent/25 via-accent/10 to-transparent blur-2xl"
+              className="absolute left-1/2 top-1/3 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/25 blur-[80px]"
             />
             <img
               src={images.founder}
               alt={`${founder.name}, ${founder.role}`}
-              width={800}
-              height={1200}
+              width={700}
+              height={1107}
               loading="lazy"
-              className="relative h-[420px] w-[280px] rounded-3xl object-cover shadow-2xl ring-1 ring-white/10 sm:h-[480px] sm:w-[320px] lg:h-[560px] lg:w-[373px]"
+              className="relative h-[420px] w-auto object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.45)] sm:h-[480px] lg:h-[560px]"
+              style={{
+                maskImage: "linear-gradient(to bottom, black 85%, transparent 99%)",
+                WebkitMaskImage: "linear-gradient(to bottom, black 85%, transparent 99%)",
+              }}
             />
           </div>
         </div>
